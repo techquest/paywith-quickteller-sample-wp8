@@ -25,3 +25,4 @@ c:\users\celestine.ezeokoye\documents\visual studio 2012\Projects\BlueCups\BlueC
 c:\users\celestine.ezeokoye\documents\visual studio 2012\Projects\BlueCups\BlueCups\Bin\Debug\System.Net.Http.Extensions.dll
 c:\users\celestine.ezeokoye\documents\visual studio 2012\Projects\BlueCups\BlueCups\Bin\Debug\System.Net.Http.Primitives.dll
 c:\users\celestine.ezeokoye\documents\visual studio 2012\Projects\BlueCups\BlueCups\Bin\Debug\WP8BouncyCastle.dll
+c:\users\celestine.ezeokoye\documents\visual studio 2012\Projects\BlueCups\BlueCups\obj\Debug\BlueCups.csprojResolveAssemblyReference.cache
