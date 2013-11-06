@@ -38,13 +38,13 @@ Using the SDK in your project
 
 The meanings of the parameters are:
 
-+ PhoneApplicationPage parent – This refers to the page hosting the SDK, the page where you want the SDK pop-up screen to show-up over.
-+ string paymentCode – This refers to the payment code for the item which you want to pay for. To get a payment code, go to your Developer Console and register a new item. You’ll automatically get a payment code for the item.
-+ long amount – This refers to the amount of money you need the user of your application to pay.
-+ string customerId – This refers to the id of the customer who I trying to perform the payment on your application. It is usually issued by you and it can be anything.
-+ string clientId – This refers to the client ID you got from Developer Console for the particular application that you are developing.
-+ string clientSecret – This refers to the secret key you got from Developer Console for the particular application that you are developing.
-+ bool isTestPayment – This is an optional parameter that is set when switching from test implementation to production environment. It is true by default which means that you are running in the test implementation. NOTE: it’s very important to set the value to false in a live distribution.
+	+ PhoneApplicationPage parent – This refers to the page hosting the SDK, the page where you want the SDK pop-up screen to show-up over.
+	+ string paymentCode – This refers to the payment code for the item which you want to pay for. To get a payment code, go to your Developer Console and register a new item. You’ll automatically get a payment code for the item.
+	+ long amount – This refers to the amount of money you need the user of your application to pay.
+	+ string customerId – This refers to the id of the customer who I trying to perform the payment on your application. It is usually issued by you and it can be anything.
+	+ string clientId – This refers to the client ID you got from Developer Console for the particular application that you are developing.
+	+ string clientSecret – This refers to the secret key you got from Developer Console for the particular application that you are developing.
+	+ bool isTestPayment – This is an optional parameter that is set when switching from test implementation to production environment. It is true by default which means that you are running in the test implementation. NOTE: it’s very important to set the value to false in a live distribution.
 
 3. Add handlers to the following events: OnPaymentCompleted and OnPaymentException, on the QuicktellerPayment object. Sample code is given thus:
 
@@ -61,6 +61,6 @@ The meanings of the parameters are:
 			await quicktellerPayment.DoPaymentAsync();
 		}
 
-Then call this method whenever you want to invoke the payment SDK. Both the SDK and .NET would handle the rest.
+	Then call this method whenever you want to invoke the payment SDK. Both the SDK and .NET would handle the rest.
 
 5. Go ahead and implement your application as you please.
