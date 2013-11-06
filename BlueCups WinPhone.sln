@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueCups", "BlueCups\BlueCups.csproj", "{A6DBA791-3D1E-4A62-A01F-A22789A09A65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueCups WinPhone", "BlueCups WinPhone\BlueCups WinPhone.csproj", "{A6DBA791-3D1E-4A62-A01F-A22789A09A65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

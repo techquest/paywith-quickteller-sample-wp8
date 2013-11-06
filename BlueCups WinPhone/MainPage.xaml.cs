@@ -42,23 +42,20 @@ namespace BlueCups
             PerformPaymentOperation(2000);
         }
 
-        private async void PerformPaymentOperation(int amount)
+        private async void PerformPaymentOperation(long amount)
         {
             var quicktellerPayment = new QuicktellerPayment(this, "10402", amount, "0000000001", CLIENT_ID, CLIENT_SECRET);
-            quicktellerPayment.OnPaymentCompleted += quicktellerPayment_OnPaymentCompleted;
-            quicktellerPayment.OnPaymentException += quicktellerPayment_OnPaymentException;
+            quicktellerPayment.OnPaymentCompleted += (string code, string message) =>
+            {
+                NavigationService.Navigate(new Uri("/PaymentSuccessful.xaml", UriKind.Relative));
+            };
+
+            quicktellerPayment.OnPaymentException += (Exception exception) =>
+            {
+                NavigationService.Navigate(new Uri("/PaymentFailed.xaml?error=" + exception.Message, UriKind.Relative));
+            };
+
             await quicktellerPayment.DoPaymentAsync();
-        }
-
-        void quicktellerPayment_OnPaymentException(Exception exception)
-        {
-            NavigationService.Navigate(new Uri("/PaymentFailed.xaml?error=" + exception.Message, UriKind.Relative));
-        }
-
-        void quicktellerPayment_OnPaymentCompleted(string code, string message)
-        {
-            //TODO: Call webservice to log the successful payment...
-            NavigationService.Navigate(new Uri("/PaymentSuccessful.xaml", UriKind.Relative));
         }
 
         // Sample code for building a localized ApplicationBar
