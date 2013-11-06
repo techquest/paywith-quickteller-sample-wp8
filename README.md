@@ -8,7 +8,7 @@ Registering you application on the Developer Console
 
 To begin integration with the Quickteller SDK, you have to register your application on the Developer Console. To do this, follow the steps below:
 
-1. Go to the Developer Console on developer.interswitch.com Sign-up if you haven’t. If you have, log-in to gain access to your console.
+1. Go to the Developer Console on http://developer.interswitch.com Sign-up if you haven’t. If you have, log-in to gain access to your console.
 2. Click on the API Console tab on top of the page, and then click on the API Access link on the left hand side of the page.
 3. There would be two tabs on the main pane: “Sandbox” and “Production”. The “Sandbox” tab is used for creating keys for test applications, while the “Production” tab is for creating keys for production applications. You can’t move “Sandbox” keys to “Production”, after testing them; you’ll have to recreate them.
 4. To create a new key, click on the “Create new key” button on either “Staging” or “Production” tab, and fill out the required information.
