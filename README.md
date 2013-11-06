@@ -36,7 +36,7 @@ Using the SDK in your project
 
 		var quicktellerPayment = new QuicktellerPayment(PhoneApplicationPage parent, string paymentCode, long amount, string customerId, string clientId, string clientSecret[, bool isTestPayment = true]);
 
-The meanings of the parameters are:
+	The meanings of the parameters are:
 
 	+ PhoneApplicationPage parent – This refers to the page hosting the SDK, the page where you want the SDK pop-up screen to show-up over.
 	+ string paymentCode – This refers to the payment code for the item which you want to pay for. To get a payment code, go to your Developer Console and register a new item. You’ll automatically get a payment code for the item.
