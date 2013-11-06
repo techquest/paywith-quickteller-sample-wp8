@@ -14,7 +14,7 @@ namespace BlueCups
 {
     public partial class MainPage : PhoneApplicationPage
     {
-        // Of course this would be put in a central location.
+        // Put your developer.interswitchng.com client id and secret key here
         private const string CLIENT_ID = "XXXXXXXXXXXXXXXXXX";
         private const string CLIENT_SECRET = "XXXXXXXXXXXXXXXXX";
 
