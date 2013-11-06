@@ -1,12 +1,12 @@
 Adding payment to your application using Quickteller Windows Phone 8 SDK
 ================================================================
 
-Quickteller Windows Phone 8 SDK let you easily add payment capability into your Windows Phone 8 application. To use the SDK, visit the NuGet package URL: http://www.nuget.org/packages/Quickteller.Sdk.Wp8/ and download the libraries. The steps below describe how you can go about integrating the SDK into your application.
+Quickteller Windows Phone 8 SDK let you easily add payment capability into your Windows Phone 8 application. To get the SDK, visit the NuGet package URL: http://www.nuget.org/packages/Quickteller.Sdk.Wp8/. The steps below describe how you can go about integrating the SDK into your application.
 
 Registering you application on the Developer Console
 ----------------------------------------------------
 
-To begin integration with the Quickteller SDK, you have to register your application on the Developer Console. To do this, follow the steps below:
+To begin integration with the Quickteller for Windows Phone 8 SDK, you have to register your application on the Developer Console. To do this, follow the steps below:
 
 1. Go to the Developer Console on http://developer.interswitch.com Sign-up if you haven’t. If you have, log-in to gain access to your console.
 2. Click on the API Console tab on top of the page, and then click on the API Access link on the left hand side of the page.
