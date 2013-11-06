@@ -8,7 +8,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using BlueCups.Resources;
-using quickteller.payment.sdk;
+using Quickteller.Sdk.Wp8;
 
 namespace BlueCups
 {

@@ -162,26 +162,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\My Received Files\Windows.Payment.Wp8.Sdk\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Quickteller.Payment.Sdk">
-      <HintPath>..\..\..\..\My Received Files\Windows.Payment.Wp8.Sdk\Quickteller.Payment.Sdk.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http">
-      <HintPath>..\..\..\..\My Received Files\Windows.Payment.Wp8.Sdk\System.Net.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.Extensions">
-      <HintPath>..\..\..\..\My Received Files\Windows.Payment.Wp8.Sdk\System.Net.Http.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.Primitives">
-      <HintPath>..\..\..\..\My Received Files\Windows.Payment.Wp8.Sdk\System.Net.Http.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="WP8BouncyCastle">
-      <HintPath>..\..\..\..\My Received Files\Windows.Payment.Wp8.Sdk\WP8BouncyCastle.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />

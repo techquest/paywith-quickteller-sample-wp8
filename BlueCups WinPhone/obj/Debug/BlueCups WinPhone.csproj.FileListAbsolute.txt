@@ -9,11 +9,6 @@ C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueC
 C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\AppManifest.xaml
 C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\Properties\WMAppManifest.xml
 C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\BlueCups_Debug_AnyCPU.xap
-C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\Newtonsoft.Json.dll
-C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\Quickteller.Payment.Sdk.dll
-C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\System.Net.Http.dll
-C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\System.Net.Http.Extensions.dll
-C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\System.Net.Http.Primitives.dll
 C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\WP8BouncyCastle.dll
 C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\obj\Debug\App.g.cs
 C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\obj\Debug\MainPage.g.cs
@@ -25,3 +20,14 @@ C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueC
 C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\obj\Debug\BlueCups.dll
 C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\obj\Debug\BlueCups.pdb
 C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\obj\Debug\XapCacheFile.xml
+C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\Quickteller.Sdk.Wp8.dll
+C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\WP8BouncyCastle.pdb
+C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\Newtonsoft.Json.dll
+C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\System.Net.Http.dll
+C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\Newtonsoft.Json.xml
+C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\System.Net.Http.xml
+C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\Bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\celestine.ezeokoye\Documents\Visual Studio 2012\Projects\BlueCups\BlueCups WinPhone\obj\Debug\BlueCups WinPhone.csprojResolveAssemblyReference.cache
