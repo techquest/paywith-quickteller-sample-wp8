@@ -15,8 +15,8 @@ namespace BlueCups
     public partial class MainPage : PhoneApplicationPage
     {
         // Of course this would be put in a central location.
-        private const string CLIENT_ID = "IKIAB5B96DF204845F5268621A5E71F5AAAF21E052A0";
-        private const string CLIENT_SECRET = "6+rrERefNjrfE36yhmwbNRZTQL/WFJKCSfFLtpzVXD4=";
+        private const string CLIENT_ID = "XXXXXXXXXXXXXXXXXX";
+        private const string CLIENT_SECRET = "XXXXXXXXXXXXXXXXX";
 
         // Constructor
         public MainPage()

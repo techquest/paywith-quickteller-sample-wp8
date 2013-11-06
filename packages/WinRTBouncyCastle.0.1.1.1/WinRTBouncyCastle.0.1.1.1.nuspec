@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>WinRTBouncyCastle</id>
+    <version>0.1.1.1</version>
+    <title>WinRT Bouncy Castle (Crypto library)</title>
+    <authors>Cyprien Autexier</authors>
+    <owners>Cyprien Autexier</owners>
+    <licenseUrl>https://w8bouncycastle.codeplex.com/license</licenseUrl>
+    <projectUrl>https://w8bouncycastle.codeplex.com/</projectUrl>
+    <iconUrl>http://www.bouncycastle.org/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Bouncy Castle API provides many cryptoghraphic APIs to every developpers. It is a port targetting WinRT (Windows Store apps &amp; WP8) of the original C# branch</description>
+    <releaseNotes>Adding Windows 8 helpers to retrieve AsymmetricKey from certificates</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>Cryptography Windows Store 8 Phone WinRT</tags>
+    <references>
+      <reference file="WinRTBouncyCastle.dll" />
+      <reference file="WP8BouncyCastle.dll" />
+    </references>
+  </metadata>
+</package>
