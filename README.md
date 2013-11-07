@@ -8,11 +8,11 @@ Registering you application on the Developer Console
 
 To begin integration with the Quickteller for Windows Phone 8 SDK, you have to register your application on the Developer Console. To do this, follow the steps below:
 
-1. Go to the Developer Console on http://developer.interswitch.com Sign-up if you haven’t. If you have, log-in to gain access to your console.
+1. Go to the Developer Console on http://developer.interswitchng.com Sign-up if you haven’t. If you have, log-in to gain access to your console.
 2. Click on the API Console tab on top of the page, and then click on the API Access link on the left hand side of the page.
-3. There would be two tabs on the main pane: “Sandbox” and “Production”. The “Sandbox” tab is used for creating keys for test applications, while the “Production” tab is for creating keys for production applications. You can’t move “Sandbox” keys to “Production”, after testing them; you’ll have to recreate them.
+3. There would be two tabs on the main pane: “Sandbox” and “Production”. The “Sandbox” tab is used for creating keys for test applications, while the “Production” tab is for creating keys for production applications. You can not use “Sandbox” keys in “Production” and vice versa.
 4. To create a new key, click on the “Create new key” button on either “Staging” or “Production” tab, and fill out the required information.
-5. Now you have your keys, you can continue with the steps below.
+5. Now that you have your keys, you can continue with the steps below.
 
 Downloading and Installing the SDK
 ----------------------------------
@@ -22,7 +22,7 @@ To use the SDK, follow either of the two steps below:
 1. Visit http://www.nuget.org/packages/Quickteller.Sdk.Wp8/, to get the instructions on how to install the SDK. Then on your Visual Studio, Go to VIEW menu --> Other Windows --> Package Manager Console. On the console type: 
 Install-Package Quickteller.Sdk.Wp8
 …and press Enter.
-2. Go to your Solution Explorer, right-click on “References” then select “Manage NuGet Packages…” On the pop-up click “Online” at the left-hand-side, then on the search menu, type “Quickteller” and select “Quickteller Payment SDK for Windows Phone 8” and click “Install”.
+2. Go to your Solution Explorer, right-click on “References” then select “Manage NuGet Packages…” On the pop-up click “Online” at the left-hand-side, then on the search menu, type “Quickteller” and select “Quickteller Payment SDK for Windows Phone 8” then click “Install”.
  
 
 Using the SDK in your project
