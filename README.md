@@ -1,27 +1,38 @@
-Adding payment to your application using Quickteller Windows Phone 8 SDK
+Using Quickteller Payment SDK for Windows Phone 8
 ================================================================
 
-Quickteller Windows Phone 8 SDK let you easily add payment capability into your Windows Phone 8 application. To get the SDK, visit the NuGet package URL: http://www.nuget.org/packages/Quickteller.Sdk.Wp8/. The steps below describe how you can go about integrating the SDK into your application.
+Quickteller Payment SDK for Windows Phone 8 let you easily add payment capability into your Windows Phone 8 application. To get the SDK, visit the NuGet package URL: http://www.nuget.org/packages/Quickteller.Sdk.Wp8/. The steps below describe how you can go about integrating the SDK into your application.
 
 Registering you application on the Developer Console
 ----------------------------------------------------
 
 To begin integration with the Quickteller for Windows Phone 8 SDK, you have to register your application on the Developer Console. To do this, follow the steps below:
 
-1. Go to the Developer Console on http://developer.interswitchng.com Sign-up if you haven’t. If you have, log-in to gain access to your console.
-2. Click on the API Console tab on top of the page, and then click on the API Access link on the left hand side of the page.
-3. There would be two tabs on the main pane: “Sandbox” and “Production”. The “Sandbox” tab is used for creating keys for test applications, while the “Production” tab is for creating keys for production applications. You can not use “Sandbox” keys in “Production” and vice versa.
-4. To create a new key, click on the “Create new key” button on either “Staging” or “Production” tab, and fill out the required information.
-5. Now that you have your keys, you can continue with the steps below.
+1.	Go to http://developer.interswitchng.com and sign up by clicking on the Get Started button. Fill the form presented to you and click on sign up. You will get an email to the address you supplied during registration asking you to confirm your registration. Follow the link to confirm your registration and you will be logged in.
+
+2.	Welcome to Interswitch Developer Network. Click on “Create Your First App” to create credentials for your first Interswitch App. Creating the App will provide you the basic requirement to use Interswitch SDKs. You need to supply the following information:
+
+	App Name (required): A desired name for your app, e.g. BlueCups App
+	Client Company Name (required): The name of the company that owns the application. E.g Blue Cups Ltd
+	Client Company Logo - Your App logo (optional): (Note that there is a limit to the size you can upload and it is expected to be 200 x 200 pixels)
+	Merchant ID (optional): If you are a WebPAY merchant already, enter your Merchant ID here, otherwise ignore this field.
+	Client Description (required): A short message introducing your App to its users. Basically, tell us what it does, the owner etc.	
+	
+3.	Click on Submit button. Once you have done this, you will see a page displaying your credentials.
+
+4.	Click on 'Manage' button at the top right conner. On this page under 'Details' section you will see your client id and your secret key. This will be needed in the SDK. On the 'Services' section turn on the 'QuickTeller Wallet Services' and 'QuickTeller Service' for your application. Note: without turning on this two services your application will throw access denied error.  
+
+5	Now that all is set, just go ahead and build your application.
 
 Downloading and Installing the SDK
 ----------------------------------
 
-To use the SDK, follow either of the two steps below:
+Visit our Nuget package page at http://www.nuget.org/packages/Quickteller.Sdk.Wp8. Then follow either of the two instructions bellow:
 
-1. Visit http://www.nuget.org/packages/Quickteller.Sdk.Wp8/, to get the instructions on how to install the SDK. Then on your Visual Studio, Go to VIEW menu --> Other Windows --> Package Manager Console. On the console type: 
+1. Inside Visual Studio, select your project in the Solution Explorer, then go to VIEW menu --> Other Windows --> Package Manager Console. On the console type: 
 Install-Package Quickteller.Sdk.Wp8
 …and press Enter.
+
 2. Go to your Solution Explorer, right-click on “References” then select “Manage NuGet Packages…” On the pop-up click “Online” at the left-hand-side, then on the search menu, type “Quickteller” and select “Quickteller Payment SDK for Windows Phone 8” then click “Install”.
  
 
@@ -30,7 +41,7 @@ Using the SDK in your project
 
 1. Add the using statement for the SDK in your code:
 	
-		using Quickteller.Payment.Sdk;
+		using Quickteller.Sdk.Wp8;
 
 2. Initialize the QuicktellerPayment class as given: 
 
@@ -51,16 +62,12 @@ Using the SDK in your project
 		quicktellerPayment.OnPaymentCompleted += (string code, string message) => {}
 		quicktellerPayment.OnPaymentException += (Exception exception) => {}
 
-4. Call the method DoPaymentAsync()on the QuicktellerPayment object. As a long-running process, the method returns System.Threading.Tasks.Task. So it’s meant to be called with the C# 5.0 await keyword so that the compiler can optimize for concurrency. The best way to implement it is to embed it into a method defined as async and then call it with the await keyword, as shown below:
+4. Call the method DoPayment() method on the QuicktellerPayment object. Check the sample below:
 
-		private async void PerformPaymentOperation(long amount)
-		{
+			var amount = 10000; //payment amount in kobo e.g. 10000=N100.00
 			var quicktellerPayment = new QuicktellerPayment(this, "10402", amount,  "0000000001", CLIENT_ID, CLIENT_SECRET);
 			quicktellerPayment.OnPaymentCompleted += (code, message) => {}
 			quicktellerPayment.OnPaymentException += (exception) => {}
 			await quicktellerPayment.DoPaymentAsync();
-		}
-
-	Then call this method whenever you want to invoke the payment SDK. Both the SDK and .NET would handle the rest.
-
-5. Go ahead and implement your application as you please.
+			
+5. That is all, go ahead and implement your application as you please. Enjoy!
