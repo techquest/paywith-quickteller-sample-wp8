@@ -42,7 +42,7 @@ namespace BlueCups
             PerformPaymentOperation(2000);
         }
 
-        private async void PerformPaymentOperation(long amount)
+        private void PerformPaymentOperation(long amount)
         {
             var quicktellerPayment = new QuicktellerPayment(this, "10402", amount, "0000000001", CLIENT_ID, CLIENT_SECRET);
             quicktellerPayment.OnPaymentCompleted += (string code, string message) =>
@@ -55,7 +55,7 @@ namespace BlueCups
                 NavigationService.Navigate(new Uri("/PaymentFailed.xaml?error=" + exception.Message, UriKind.Relative));
             };
 
-            await quicktellerPayment.DoPaymentAsync();
+            quicktellerPayment.DoPaymentAsync();
         }
 
         // Sample code for building a localized ApplicationBar
