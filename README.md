@@ -13,10 +13,14 @@ To begin integration with the Quickteller for Windows Phone 8 SDK, you have to r
 2.	Welcome to Interswitch Developer Network. Click on “Create Your First App” to create credentials for your first Interswitch App. Creating the App will provide you the basic requirement to use Interswitch SDKs. You need to supply the following information:
 
 	App Name (required): A desired name for your app, e.g. BlueCups App
-	Client Company Name (required): The name of the company that owns the application. E.g Blue Cups Ltd
-	Client Company Logo - Your App logo (optional): (Note that there is a limit to the size you can upload and it is expected to be 200 x 200 pixels)
+	
+	Company Name (required): The name of the company that owns the application. E.g Blue Cups Ltd
+	
+	Company Logo - Your App logo (optional): (Note that there is a limit to the size you can upload and it is expected to be 200 x 200 pixels)
+	
 	Merchant ID (optional): If you are a WebPAY merchant already, enter your Merchant ID here, otherwise ignore this field.
-	Client Description (required): A short message introducing your App to its users. Basically, tell us what it does, the owner etc.	
+	
+	Description (required): A short message introducing your App to its users. Basically, tell us what it does, the owner etc.	
 	
 3.	Click on Submit button. Once you have done this, you will see a page displaying your credentials.
 
