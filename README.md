@@ -26,7 +26,7 @@ To begin integration with the Quickteller for Windows Phone 8 SDK, you have to r
 
 4.	Click on 'Manage' button at the top right conner. On this page under 'Details' section you will see your client id and your secret key. This will be needed in the SDK. On the 'Services' section turn on the 'QuickTeller Wallet Services' and 'QuickTeller Service' for your application. Note: without turning on this two services your application will throw access denied error.  
 
-5	Now that all is set, just go ahead and build your application.
+5	Now all is set for you to start building your app.
 
 Downloading and Installing the SDK
 ----------------------------------
@@ -63,15 +63,21 @@ Using the SDK in your project
 
 3. Add handlers to the following events: OnPaymentCompleted and OnPaymentException, on the QuicktellerPayment object. Sample code is given thus:
 
-		quicktellerPayment.OnPaymentCompleted += (string code, string message) => {}
-		quicktellerPayment.OnPaymentException += (Exception exception) => {}
-
+			quicktellerPayment.OnPaymentCompleted += (e) =>
+            {
+                //where e is a type of PaymentCompletedEventArgs
+            };
+            quicktellerPayment.OnPaymentException += (e) =>
+            {
+                //where e is a type of PaymentExceptionEventArgs
+            };
+						
 4. Call the method DoPayment() method on the QuicktellerPayment object. Check the sample below:
 
 			var amount = 10000; //payment amount in kobo e.g. 10000=N100.00
 			var quicktellerPayment = new QuicktellerPayment(this, "10402", amount,  "0000000001", CLIENT_ID, CLIENT_SECRET);
-			quicktellerPayment.OnPaymentCompleted += (code, message) => {}
-			quicktellerPayment.OnPaymentException += (exception) => {}
+			quicktellerPayment.OnPaymentCompleted += (e) => {}
+			quicktellerPayment.OnPaymentException += (e) => {}
 			await quicktellerPayment.DoPaymentAsync();
 			
-5. That is all, go ahead and implement your application as you please. Enjoy!
+5. That is all. Enjoy!
