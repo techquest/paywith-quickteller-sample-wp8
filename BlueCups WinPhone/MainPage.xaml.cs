@@ -45,33 +45,20 @@ namespace BlueCups
         private void PerformPaymentOperation(long amount)
         {
             var quicktellerPayment = new QuicktellerPayment(this, "10402", amount, "0000000001", CLIENT_ID, CLIENT_SECRET);
-            quicktellerPayment.OnPaymentCompleted += (string code, string message) =>
+
+            quicktellerPayment.OnPaymentCompleted += (e) =>
             {
+                //where e is a type of PaymentCompletedEventArgs
                 NavigationService.Navigate(new Uri("/PaymentSuccessful.xaml", UriKind.Relative));
             };
-
-            quicktellerPayment.OnPaymentException += (Exception exception) =>
+            quicktellerPayment.OnPaymentException += (e) =>
             {
-                NavigationService.Navigate(new Uri("/PaymentFailed.xaml?error=" + exception.Message, UriKind.Relative));
+                //where e is a type of PaymentExceptionEventArgs
+                NavigationService.Navigate(new Uri("/PaymentFailed.xaml?error=" + e.PaymentException.Message, UriKind.Relative));
             };
 
-            quicktellerPayment.DoPaymentAsync();
+            quicktellerPayment.DoPayment();
         }
 
-        // Sample code for building a localized ApplicationBar
-        //private void BuildLocalizedApplicationBar()
-        //{
-        //    // Set the page's ApplicationBar to a new instance of ApplicationBar.
-        //    ApplicationBar = new ApplicationBar();
-
-        //    // Create a new button and set the text value to the localized string from AppResources.
-        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-        //    appBarButton.Text = AppResources.AppBarButtonText;
-        //    ApplicationBar.Buttons.Add(appBarButton);
-
-        //    // Create a new menu item with the localized string from AppResources.
-        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
-        //    ApplicationBar.MenuItems.Add(appBarMenuItem);
-        //}
     }
 }
